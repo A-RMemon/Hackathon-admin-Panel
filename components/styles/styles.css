@@ -1,0 +1,419 @@
+.mainContainer {
+    min-height: 100vh;
+    align-items: stretch;
+    animation: Fadein 1s ease;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+@keyframes Fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.rightContainer {
+    width: 77.5%;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.leftContainer {
+    width: 22.5%;
+    position: relative;
+    background-color: rgb(90, 55, 32);
+    padding: 50px;
+    border-radius: 0 0 30px 0;
+}
+
+.leftContainer h1 {
+    color: white;
+    text-align: center;
+
+}
+
+.leftChild {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.leftbtn {
+    padding: 10px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.leftbtn:focus {
+    background-color: white;
+    color: rgb(90, 55, 32);
+}
+
+.loginHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32%;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.loginParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../assets/pngtree-captivating-coffee-cup-with-blue-background-image_15991216.jpg')no-repeat center center/cover;
+    height: 100vh;
+
+}
+
+.loginBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    background-color: #81a5d1;
+
+    height: 68%;
+    border-radius: 10% 0 20px 20px;
+}
+
+.loginChild {
+    border: 1px solid;
+    margin-top: 5%;
+    width: 30%;
+    height: 80vh;
+    border-radius:0 0 20px 20px;
+}
+
+.loginHeader h1 {
+    color: white;
+}
+
+.loginBody h1 {
+    margin: 4% 0 6% 0;
+}
+
+.loginBody input {
+    width: 90%;
+    height: 10%;
+    margin-bottom: 4%;
+    padding: 5px;
+    background-color: rgb(216, 216, 216);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.loginBody button {
+    width: 40%;
+    height: 10%;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(216, 216, 216);
+    transition: all .5s ease;
+}
+
+.loginBody button:hover {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+
+}
+
+.ProdList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+}
+
+.cardParent {
+    border: 1px solid;
+    width: 300px;
+    height: 240px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+}
+
+.cardParent:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardParent img {
+    width: 60%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.cardParent h2 {
+    font-size: 1.2rem;
+    margin: 12px;
+}
+
+.cardParent b {
+    display: block;
+    margin: 0 12px;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.cardParent p {
+    margin: 12px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.cardParent button {
+    width: 30%;
+    height: 35px;
+    margin-left: 5px;
+    padding: 5px;
+    /* margin-top: 30px; */
+    outline: none;
+    border: none;
+    background-color: rgb(90, 55, 32);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.ProdChild1 input {
+    width: 30%;
+    height: 30px;
+    margin-right: 2px;
+    margin-bottom: 1%;
+    padding: 5px;
+    background-color: rgb(216, 216, 216);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#ShortDesc {
+    width: 60.3%;
+}
+
+.ProdChild1 button {
+    width: 20%;
+    height: 40px;
+    margin-left: 5px;
+    padding: 5px;
+    /* margin-top: 30px; */
+    outline: none;
+    border: none;
+    background-color: rgb(90, 55, 32);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.ProdChild1 button:hover {
+    background-color: rgb(174, 174, 174);
+    color: rgb(90, 55, 32);
+}
+.Prodch2Header{
+    display: flex;
+    /* justify-content: center; */
+}
+.Prodch2Header div{
+    border: 1px solid;
+    height: 20vh;
+    width: 20%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.userCard b,
+.Prodch2Header div b{
+    font-size: 1.5rem;
+}
+.userCard,
+.Prodch2Header div p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 7%;
+    font-weight: 900;
+}
+.userList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+}
+.userCard{
+    border: 1px solid;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+}
+.userCard b{
+    display: block;
+    margin: 0 12px;
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.userCard button{
+    width: 30%;
+    height: 35px;
+    margin-left: 5px;
+    padding: 5px;
+    /* margin-top: 30px; */
+    outline: none;
+    border: none;
+    background-color: rgb(90, 55, 32);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+.userCard p{
+    margin: 12px;
+    color: #555;
+    font-size: 0.95rem;
+}
+.userCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+/* Aggressive Sidebar */
+.leftContainer {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    border-right: 2px solid #0f3460;
+    color: #fff;
+  }
+  .leftContainer h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px #00d4ff;
+  }
+  .leftbtn {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #00d4ff;
+    color: #fff;
+    border-radius: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  .leftbtn:hover, .leftbtn:focus {
+    background: linear-gradient(90deg, #00d4ff, #ff6b6b);
+    color: #fff;
+    box-shadow: 0 0 20px #00d4ff;
+  }
+  
+  /* Right Container */
+  .rightContainer {
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(8px);
+    border-left: 1px solid #222;
+    min-height: 100vh;
+  }
+  
+  /* Cards */
+  .cardParent, .userCard, .MuiCard-root {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25) !important;
+    color: #fff !important;
+    border: none !important;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .cardParent:hover, .userCard:hover, .MuiCard-root:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.35) !important;
+  }
+  .cardParent h2, .userCard b, .MuiTypography-h6 {
+    color: #fff !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .cardParent b, .userCard b {
+    color: #00d4ff !important;
+  }
+  
+  /* Buttons (except login) */
+  .cardParent button, .userCard button, .ProdChild1 button, .Prodch2Header button {
+    background: linear-gradient(90deg, #ff6b6b, #00d4ff);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 8px 18px;
+    margin: 5px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.2s;
+  }
+  .cardParent button:hover, .userCard button:hover, .ProdChild1 button:hover, .Prodch2Header button:hover {
+    background: linear-gradient(90deg, #00d4ff, #ff6b6b);
+    color: #fff;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 18px #00d4ff44;
+  }
+  
+  /* Grid/List */
+  .ProdList, .userList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  /* Typography */
+  .MuiTypography-h4, .Prodch2Header div p {
+    color: #00d4ff !important;
+    font-size: 2.2rem !important;
+    font-weight: 900 !important;
+    text-shadow: 0 0 10px #00d4ff55;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .ProdList, .userList {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .leftContainer, .rightContainer {
+      width: 100%;
+      padding: 10px;
+    }
+  }
